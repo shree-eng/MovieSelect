@@ -1,0 +1,138 @@
+/*--------------top--------------------*/
+
+
+.navbar{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.20),
+                        0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
+                0 2px 10px 0 rgba(0,0,0,.12);
+  background-color: #FFBF00;
+  color: #555;
+	height: 145px;
+}
+
+nav.navbar .nav-wrapper{
+	padding: 0 55px;
+}
+
+.navbar a{
+	color: #fff;
+}
+
+nav.navbar.top-nav-collapse a{
+	color:#fff;
+}
+
+.top-nav-collapse {
+/*    background-color: #606060;*/
+	z-index: 4;
+}
+
+
+nav.navbar .top-nav-collapse ul a:hover {
+    background-color: transparent;
+}
+
+label {
+    color: #606060;
+    position: relative;
+    top: 20px;
+}
+
+/*--------------------Filter------------------------*/
+.section-filter{
+	margin-top: -30px;
+}
+
+.clear-filter{
+	  padding: 2px 10px;
+    text-transform: none;
+    top: 40px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 40px;
+}
+
+.clear-filter i.material-icons.left{
+    font-size: 1.1rem;
+    width: 16px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+}
+
+
+/*------------manual-------------------*/
+ h2.header{
+	color:  #606060;
+	text-align: center;
+}
+
+
+/*------------Response-------------*/
+@media(max-width:992px){
+  .scrolling-navbar {
+    height: 325px;
+  }
+	.clear-filter {	
+		top:0;			
+	}	
+  
+}
+
+@media(min-width:600px){
+    .scrolling-navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	    transition: background .5s ease-in-out,padding .5s ease-in-out;
+	    	padding-top: 20px;
+    }
+}
+
+
+
+/*---- cards style ---*/
+
+/*------------cards-------------------*/
+.cardContainer{
+	min-width:300px;
+	padding-left: 1%;
+}
+
+.card .card-image{
+	max-width: 45%;
+    margin: auto;
+    min-height: 250px;
+}
+    
+.card .card-image img{
+	min-height: 250px;
+}
+
+.card .card-content{
+	background-color: white;
+}
+
+.card .card-content .card-title {
+    font-size: 1.2rem;
+}
+
+/*color card*/
+.card.cardHorror {
+	background-color: #000;
+}
+.card.cardAction {
+	background-color: #bdbdbd;
+}
+.card.cardRomance {
+	background-color: #d6b6cd;
+}
+.card.cardComedy {
+	background-color: #97b2ea;
+}
+.card.cardAdventure {
+	background-color: #4c9fa2;
+}
+
+.resumo p{
+	font-size: 0.8em;
+}

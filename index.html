@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Movie - Select</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar scrolling-navbar">
+	    <div class="nav-wrapper container">
+			<div class="section-filter">
+				<div class="row">
+					<div class="col s12 l5">	
+						<label>Genre:</label>
+						<select class="browser-default video-filter"  id="category-filter" data-filter-group="category">
+						    <option value="" disabled selected>Choose option</option>
+						    <option value=".horror">Horror</li>
+							<option value=".action">Action</li>
+							<option value=".adventure">Adventure</li>
+							<option value=".comedy">Comedy</li>
+							<option value=".romance">Romance</li>
+						</select>
+					</div>
+					<div class="col s12 l5">
+						<label>Type:</label>
+						<select class="browser-default video-filter" id="topic-filter" data-filter-group="topic">
+						    <option value="" disabled selected>Choose option</option>
+							<option value=".movie">Movie</li>
+							<option value=".book">Book</li>
+						</select>
+					</div>
+          
+          <div class="col s12 l2 right-align">
+            <a class="waves-effect waves-light btn clear-filter">Clean</a>
+          </div>
+			</div>
+		</div>
+	</nav>
+
+	<main>	
+		<h2 class="header">Select Your Movie</h2>	
+		<div class="section conteudoManual">
+		    <div class="row container  js-filter-grid">		      	
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item movie romance" >
+            <div class="card cardRomance">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://t0.gstatic.com/images?q=tbn:ANd9GcRW8IcoIkyofkw7XeIaty_05_jNg8XXf_tYNisCJqXOeMF9yhSG">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">A Reason To Start Over<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Movie</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating: 6.4/10</p>
+                  </div>
+                <div class="length">
+                    <p>Length: 90 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: Portugese</p>
+                  </div>
+                  <div class="ano">
+                    <p>Release: 1/12/14</p>
+                  </div>                  
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      Ben (Jonathan Patrick Moore) met Ava (Erin Bethea) at age seven when she was standing in the driveway. As time passes, the two travel together through the seasons of life, until a tragedy occurs that leaves their entire future in danger.
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>				
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item book romance" >
+           <div class="card cardRomance">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://upload.wikimedia.org/wikipedia/en/4/41/The_Fault_in_Our_Stars_%28Official_Film_Poster%29.png">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">The Fault In Our Stars<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Book</p>
+                  </div>
+                  <div class="autor">
+                    <p>Author: John Green</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating: 7.7/10</p>
+                  </div>
+                <div class="length">
+                    <p>Length: 120 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: English</p>
+                  </div>
+                <div class="ano">
+                    <p>Release: 1/10/13</p>
+                </div>
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      Hazel Grace Lancaster (Shailene Woodley), a 16-year-old cancer patient, meets and falls in love with Gus Waters (Ansel Elgort), a similarly afflicted teen from her cancer support group. 
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>
+								
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item movie comedy" >
+           <div class="card cardComedy">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://upload.wikimedia.org/wikipedia/lt/thumb/b/bd/Click_film.jpg/200px-Click_film.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Click<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Movie</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating:6.4/10</p>
+                  </div>
+                  <div class="length">
+                    <p>Length: 120 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: English</p>
+                  </div>
+                  <div class="ano">
+                    <p>Release: 1/10/13</p>
+                  </div>         
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      Michael Newman (Adam Sandler) seems to have it all but his wife, Donna (Kate Beckinsale), is increasingly frustrated by the amount of time he has to spend at work. Michael cannot find time to be at home until he meets an eccentric inventor (Christopher Walken) who gives him a universal remote that controls time. 
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>
+				
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item book horror" >
+            <div class="card cardHorror">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://images-na.ssl-images-amazon.com/images/I/51gewmYeKUL._SY346_.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">O Iluminado<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Book</p>
+                  </div>
+                  <div class="autor">
+                    <p>Author: Stephen King</p>
+                 </div>
+                <div class="length">
+                    <p>Length: 120 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: Spanish</p>
+                  </div>
+                <div class="ano">
+                    <p>Release: 1/10/13</p>
+                </div>
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      In The Shining, Jack Torrence gets a job as a janitor at an old hotel, and thinks it will be the solution to his family's problems - they will no longer experience difficulties, his wife will no longer suffer and his son, Danny, will be able to have pure air to get rid of strange convulsions. 
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>			
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item book horror" >
+           <div class="card cardHorror">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://statics.livrariacultura.net.br/products/capas_lg/266/29004266.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Hell House<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Book</p>
+                  </div>
+                  <div class="autor">
+                    <p>Author: Richard Matheson, Jacqueline Valpassos</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating:6.4/10</p>
+                  </div>
+                <div class="length">
+                    <p>Length: 90 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: English</p>
+                  </div>
+                <div class="ano">
+                    <p>Release: 1/10/13</p>
+                </div>
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                     Five years after 15 people were killed during a haunted house tour, a documentary crew visits the scene to investigate what really happened.
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>
+										        
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item movie action" >
+          <div class="card cardAction">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://upload.wikimedia.org/wikipedia/en/b/b6/Kick_%282014_film%29_Official_release_poster.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Kick<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Movie</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating:5.3/10</p>
+                  </div>
+                  <div class="length">
+                    <p>Length: 120 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: Hindi</p>
+                  </div>
+                <div class="ano">
+                    <p>Release: 26/7/16</p>
+                </div>
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      A slippery thief (Salman Khan) plays an important part in the lives of a psychiatrist (Jacqueline Fernandez) and her prospective husband (Randeep Hooda), a police officer from India.
+                  </div>	
+					    </div>
+					</div>
+	      </div>
+				
+				<div class="col col s12 m6 l4 cardContainer js-filter-item js-filter-grid-item movie adventure" >
+           <div class="card cardAdventure">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://upload.wikimedia.org/wikipedia/en/6/6e/Jurassic_World_poster.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Jurassic World<i class="material-icons right">more_vert</i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">Information:<i class="material-icons right">close</i></span>
+                  <div class="tipo">
+                    <p>Movie</p>
+                  </div>
+                <div class="rate">
+                    <p>Rating:7/10</p>
+                  </div>
+                  <div class="length">
+                    <p>Length: 120 mins</p>
+                  </div>
+                <div class="language">
+                    <p>Language: English</p>
+                  </div>
+                <div class="ano">
+                    <p>Release: 26/5/16</p>
+                </div>
+                  <div class="resumo"> 
+                    <p>Synopsis:</p>
+                    <p>
+                      Located off the coast of Costa Rica, the Jurassic World luxury resort provides a habitat for an array of genetically engineered dinosaurs, including the vicious and intelligent Indominus rex. When the massive creature escapes, it sets off a chain reaction that causes the other dinos to run amok. Now, it's up to a former military man and animal expert (Chris Pratt) to use his special skills to save two young brothers and the rest of the tourists from an all-out, prehistoric assault.
+
+                    </p>
+                  </div>	
+					    </div>
+					</div>
+	      </div>
+				
+		 </div>
+	</div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js'></script>
+<script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

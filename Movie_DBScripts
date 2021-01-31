@@ -1,0 +1,72 @@
+CREATE TABLE MOVIES (ID INT NOT NULL PRIMARY KEY,
+					 Title  VARCHAR(255),
+					 Description VARCHAR(255),
+					 Featured_IMAGE Image ,
+					 Movie_length VARCHAR(255),
+					 Movie_Release_date Date
+					 );
+					 
+CREATE TABLE CATEGORY (ID INT NOT NULL PRIMARY KEY,
+					 Movie_Type   VARCHAR(255),
+					 Type_value VARCHAR(255)
+					 );	
+
+CREATE TABLE RELATIONSHIP (ID INT NOT NULL PRIMARY KEY,
+							CATEGORY_ID INT NOT NULL,
+							MOVIE_ID INT NOT NULL);
+							
+							
+		
+INSERT INTO MOVIES (ID, Title, Description, Rating, Year)
+VALUES (1, 'A Reason To Start Over', 'Ben (Jonathan Patrick Moore) met Ava (Erin Bethea) at age seven when she was standing in the driveway. As time passes, the two travel together through the seasons of life, until a tragedy occurs that leaves their entire future in danger','96.4/10', 2016);
+
+INSERT INTO MOVIES (ID, Title, Description, Rating)
+VALUES (2, 'The Fault In Our Stars', 'BHazel Grace Lancaster (Shailene Woodley), a 16-year-old cancer patient, meets and falls in love with Gus Waters (Ansel Elgort), a similarly afflicted teen from her cancer support group.','7.7/10');
+
+INSERT INTO MOVIES (ID, Title, Description, Rating, Year)
+VALUES (3, 'Click', 'Michael Newman (Adam Sandler) seems to have it all but his wife, Donna (Kate Beckinsale), is increasingly frustrated by the amount of time he has to spend at work. Michael cannot find time to be at home until he meets an eccentric inventor (Christopher Walken) who gives him a universal remote that controls time.','6.4/10', 2016);
+
+INSERT INTO MOVIES (ID, Title, Description, Rating)
+VALUES (4, 'AO Iluminado', 'In The Shining, Jack Torrence gets a job as a janitor at an old hotel, and thinks it will be the solution to his family's problems - they will no longer experience difficulties, his wife will no longer suffer and his son, Danny, will be able to have pure air to get rid of strange convulsions.','8.4/10');
+
+INSERT INTO MOVIES (ID, Title, Description, Rating, Year)
+VALUES (5, 'Hell House', 'In The Shining, Jack Torrence gets a job as a janitor at an old hotel, and thinks it will be the solution to his family's problems - they will no longer experience difficulties, his wife will no longer suffer and his son, Danny, will be able to have pure air to get rid of strange convulsions.','90 minutes');
+
+INSERT INTO MOVIES (ID, Title, Description, Rating)
+VALUES (6, 'A Reason To Start Over', 'Ben (Jonathan Patrick Moore) met Ava (Erin Bethea) at age seven when she was standing in the driveway. As time passes, the two travel together through the seasons of life, until a tragedy occurs that leaves their entire future in danger','6.4/10');
+
+INSERT INTO MOVIES (ID, Title, Description, Rating, Year)
+VALUES (7, 'Kick', 'A slippery thief (Salman Khan) plays an important part in the lives of a psychiatrist (Jacqueline Fernandez) and her prospective husband (Randeep Hooda), a police officer from India.','5.3/10', 2014);
+
+INSERT INTO MOVIES (ID, Title, Description, Rating, Year)
+VALUES (7, 'Jurassic World', 'Located off the coast of Costa Rica, the Jurassic World luxury resort provides a habitat for an array of genetically engineered dinosaurs, including the vicious and intelligent Indominus rex. When the massive creature escapes, it sets off a chain reaction that causes the other dinos to run amok. Now, it's up to a former military man and animal expert (Chris Pratt) to use his special skills to save two young brothers and the rest of the tourists from an all-out, prehistoric assault.','7/10', 2015);
+
+
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (1, 5, 1);
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (2, 5, 2);
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (3, 4, 3);
+
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (4, 1, 4);
+
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (5, 1, 5);
+
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (6, 2, 6);
+
+
+INSERT INTO RELATIONSHIP (ID, CATEGORY_ID, MOVIE_ID)
+VALUES (7, 3, 7);
+
+
+
